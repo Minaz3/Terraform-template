@@ -1,5 +1,5 @@
 resource "local_file" "my_pet" {
-  filename = "/pets.txt"
+  filename = "${path.module}/pets.txt"
   content  = "I Love Pets"
 }
 
